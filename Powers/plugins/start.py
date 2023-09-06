@@ -176,7 +176,8 @@ async def commands_menu(_, q: CallbackQuery):
     ou = await gen_cmds_kb(q.message)
     keyboard = ikb(ou, True)
     try:
-        cpt = f"""🍷𝐇єу [{m.from_user.first_name}](http://t.me/{m.from_user.username}) 
+        cpt = f"""
+🍷𝐇єу [{m.from_user.first_name}](http://t.me/{m.from_user.username}) 
 
 💥𝐈 αм ✭𝐀∂ναи¢є ✭𝐌єииαgє✭ 𝐘συя ✭𝐒υρєя ✭𝐆яσυρ✭
 
