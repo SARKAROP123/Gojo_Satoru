@@ -31,7 +31,7 @@ Your donation might also me get me a new feature or two, which I wasn't able to 
 
 All the fund would be put into my services such as database, storage and hosting!
 
-You can donate by contacting my owner: [SARKAR](http://t.me/ll_SARKAR_BABY_ll)
+You can donate by contacting my owner: [Captain Ezio](http://t.me/iamgojoof6eyes)
      """
 
     LOGGER.info(f"{m.from_user.id} fetched donation text in {m.chat.id}")
@@ -105,19 +105,11 @@ async def start(c: Gojo, m: Message):
                     return
         try:
             cpt = f"""
-🍷𝐖єℓ¢σмє 𝐓σ [{m.from_user.first_name}](http://t.me/{m.from_user.username}) 💥𝐈 αм ✭𝐀∂ναи¢є ✭𝐌єииαgє✭ 𝐘συя ✭𝐒υρєя ✭𝐆яσυρ✭
+Hey [{m.from_user.first_name}](http://t.me/{m.from_user.username})! I am Gojo ✨.
+I'm here to help you manage your groups!
+Hit /help to find out more about how to use me in my full potential!
 
-𝐀∂∂✰ 𝐘συя 𝐆яσυρ✰ 𝐄иנσу💥
-┏━━━━━━━━━━━━━━━━━┓
-
-┣★ 𝐂яєαтσя : [𝐂ℓι¢к нєяє](https://t.me/ll_SARKAR_BABY_ll)
-
-┣★ 𝐔ρ∂αтєѕ : [𝐂ℓι¢к нєяє](https://t.me/TKS_JOIN)
-
-┣★ 𝐒υρρσят : [𝐂ℓι¢к нєяє](https://t.me/+I67bz3RT2cA3ODU1)
-
-┗━━━━━━━━━━━━━━━━━┛
-/help 𝐂ℓι¢к 𝐇σω 𝐓σ 𝐔ѕє 𝐌є 𝐘συя 𝐆яρυρ."""
+Join my [News Channel](https://t.me/gojo_bots_network) to get information on all the latest updates."""
 
             await m.reply_photo(
                 photo=str(choice(StartPic)),
@@ -152,14 +144,11 @@ async def start(c: Gojo, m: Message):
 async def start_back(_, q: CallbackQuery):
     try:
         cpt = f"""
-🍷𝐇єу [{m.from_user.first_name}](http://t.me/{m.from_user.username}) 
+Hey [{q.from_user.first_name}](http://t.me/{q.from_user.username})! I am Gojo ✨.
+I'm here to help you manage your groups!
+Hit /help to find out more about how to use me in my full potential!
 
-💥𝐈 αм ✭𝐀∂ναи¢є ✭𝐌єииαgє✭ 𝐘συя ✭𝐒υρєя ✭𝐆яσυρ✭
-
-𝐈 𝐚𝐦 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮 𝐦𝐚𝐧𝐚𝐠𝐞 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩
-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞:
-+  /start 𝐒𝐭𝐚𝐫𝐭 𝐓𝐡𝐞 𝐁𝐨𝐭
-+  /help 𝐆𝐢𝐯𝐞 𝐘𝐨𝐮 𝐓𝐡𝐢𝐬 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 ."""
+Join my [News Channel](http://t.me/gojo_bots_network) to get information on all the latest updates."""
 
         await q.edit_message_caption(
             caption=cpt,
@@ -177,11 +166,13 @@ async def commands_menu(_, q: CallbackQuery):
     keyboard = ikb(ou, True)
     try:
         cpt = f"""
-🍷𝐇єу **[{m.from_user.first_name}](http://t.me/{m.from_user.username})**! 💥𝐈 αм ✭𝐀∂ναи¢є ✭𝐌єииαgє✭ 𝐘συя ✭𝐒υρєя ✭𝐆яσυρ✭
-𝐈 𝐚𝐦 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮 𝐦𝐚𝐧𝐚𝐠𝐞 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩
-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞:
-+  /start 𝐒𝐭𝐚𝐫𝐭 𝐓𝐡𝐞 𝐁𝐨𝐭
-+  /help 𝐆𝐢𝐯𝐞 𝐘𝐨𝐮 𝐓𝐡𝐢𝐬 𝐌𝐞𝐬𝐬𝐚𝐠𝐞
+Hey **[{q.from_user.first_name}](http://t.me/{q.from_user.username})**! I am Gojo✨.
+I'm here to help you manage your groups!
+Commands available:
+× /start: Start the bot
+× /help: Give's you this message.
+
+You can use `$` and `!` in placec of `/` as your prefix handler
 """
 
         await q.edit_message_caption(
@@ -248,14 +239,11 @@ async def help_menu(_, m: Message):
             ou = await gen_cmds_kb(m)
             keyboard = ikb(ou, True)
             msg = f"""
-🍷𝐇єу [{m.from_user.first_name}](http://t.me/{m.from_user.username}) 
-
-💥𝐈 αм ✭𝐀∂ναи¢є ✭𝐌єииαgє✭ 𝐘συя ✭𝐒υρєя ✭𝐆яσυρ✭
-
-𝐈 𝐚𝐦 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮 𝐦𝐚𝐧𝐚𝐠𝐞 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩
-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞:
-+  /start 𝐒𝐭𝐚𝐫𝐭 𝐓𝐡𝐞 𝐁𝐨𝐭
-+  /help 𝐆𝐢𝐯𝐞 𝐘𝐨𝐮 𝐓𝐡𝐢𝐬 𝐌𝐞𝐬𝐬𝐚𝐠𝐞."""
+Hey **[{m.from_user.first_name}](http://t.me/{m.from_user.username})**!I am Gojo✨.
+I'm here to help you manage your groups!
+Commands available:
+× /start: Start the bot
+× /help: Give's you this message."""
         else:
             keyboard = InlineKeyboardMarkup(
               [
@@ -267,7 +255,7 @@ async def help_menu(_, m: Message):
                 ],
               ],
             )
-            msg = "𝐂𝐎𝐍𝐍𝐄𝐂𝐓 𝐌𝐄 𝐈𝐍 𝐏𝐌 𝐓𝐎 𝐆𝐄𝐓 𝐓𝐇𝐄 𝐋𝐈𝐒𝐓 𝐏𝐎𝐒𝐒𝐈𝐁𝐋𝐄 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒"
+            msg = "Contact me in PM to get the list of possible commands."
 
         await m.reply_photo(
             photo=str(choice(StartPic)),
