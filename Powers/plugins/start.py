@@ -251,11 +251,14 @@ async def help_menu(_, m: Message):
             ou = await gen_cmds_kb(m)
             keyboard = ikb(ou, True)
             msg = f"""
-Hey **[{m.from_user.first_name}](http://t.me/{m.from_user.username})**!I am Gojo✨.
-I'm here to help you manage your groups!
-Commands available:
-× /start: Start the bot
-× /help: Give's you this message."""
+🍷𝐇єу [{m.from_user.first_name}](http://t.me/{m.from_user.username}) 
+
+💥𝐈 αм ✭𝐀∂ναи¢є ✭𝐌єииαgє✭ 𝐘συя ✭𝐒υρєя ✭𝐆яσυρ✭
+
+𝐈 𝐚𝐦 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮 𝐦𝐚𝐧𝐚𝐠𝐞 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩
+𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞:
++  /start 𝐒𝐭𝐚𝐫𝐭 𝐓𝐡𝐞 𝐁𝐨𝐭
++  /help 𝐆𝐢𝐯𝐞 𝐘𝐨𝐮 𝐓𝐡𝐢𝐬 𝐌𝐞𝐬𝐬𝐚𝐠𝐞."""
         else:
             keyboard = InlineKeyboardMarkup(
               [
@@ -267,7 +270,7 @@ Commands available:
                 ],
               ],
             )
-            msg = "Contact me in PM to get the list of possible commands."
+            msg = "𝐂𝐎𝐍𝐍𝐄𝐂𝐓 𝐌𝐄 𝐈𝐍 𝐏𝐌 𝐓𝐎 𝐆𝐄𝐓 𝐓𝐇𝐄 𝐋𝐈𝐒𝐓 𝐏𝐎𝐒𝐒𝐈𝐁𝐋𝐄 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒"
 
         await m.reply_photo(
             photo=str(choice(StartPic)),
