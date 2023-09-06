@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from config import LOGGER
+from pyrogram import LOGGER
 from .. import app
 from Powers import app
 
