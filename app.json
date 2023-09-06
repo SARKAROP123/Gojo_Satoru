@@ -33,11 +33,6 @@
         "required": true,
         "value": ""
       },
-      "DB_NAME": {
-        "description": "Your MongoDB database name.",
-        "required": false,
-        "value": ""
-      },
       "OWNER_ID": {
         "description": "Your user ID as an integer.",
         "required": false,
@@ -78,26 +73,10 @@
         "required": false,
         "value": ""
       },
-      "GENIUS_API" : {
-        "description": "Your Lyrics Genius Api Token. To fetch lyrics of songs",
-        "required": false,
-        "value": ""
-      },
-      
-      "BDB_URI": {
-        "description": "Your Mongodb uri different from the previous one to store more info",
-        "required": false,
-        "value": ""
-      },
       "TIME_ZONE": {
         "description": "Your time zone",
         "required": false,
         "value": "Asia/Kolkata"
-      },
-      "RMBG_API" : {
-        "description": "Your removebackground api to remove the background",
-        "required": false,
-        "value": ""
       },
       "WORKERS": {
         "description": "Number of workers to run the bot.",
