@@ -239,7 +239,7 @@ async def help_menu(_, m: Message):
             ou = await gen_cmds_kb(m)
             keyboard = ikb(ou, True)
             msg = f"""
-Hey **[{m.from_user.first_name}](http://t.me/{m.from_user.username})**!I am Gojo✨.
+Hey **[{m.from_user.first_name}](http://t.me/{m.from_user.username})**!I am Management Bot.
 I'm here to help you manage your groups!
 Commands available:
 × /start: Start the bot
