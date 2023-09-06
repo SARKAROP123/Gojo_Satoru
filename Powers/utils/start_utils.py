@@ -39,45 +39,45 @@ async def gen_start_kb(q: Message or CallbackQuery):
         [
             [
                 (
-                    "➕ ADD ME YOUR GROUP➕",
+                    "➕𝐀𝐃𝐃 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏➕",
                     f"https://t.me/{Config.BOT_USERNAME}?startgroup=new",
                     "url",
                 ),
                 (
-                    "SUPPORT",
+                    "𝐒𝐔𝐏𝐏𝐎𝐑𝐓",
                     f"https://t.me/{SUPPORT_GROUP}",
                     "url",
                 ),
             ],
             [
                 (
-                    "📚 Commands & Help", "commands"
+                    "𝐂𝐎𝐌𝐌𝐀𝐍𝐃 & 𝐇𝐄𝐋𝐏", "commands"
                 ),
                 (
-                    "👾 Bot info",
+                    "𝐁𝐎𝐓 𝐈𝐍𝐅𝐎",
                     "bot_curr_info"
                 )
             ],
             [
                 (
-                    "🗃️ Source Code",
-                    "https://github.com/Gojo-Bots/Gojo_Satoru",
+                    "𝐔𝐏𝐃𝐀𝐓𝐄",
+                    "https://t.me/TKS_JOIN",
                     "url",
                 ),
                 (
-                    "Owner ❤️",
+                    "💥𝐎𝐖𝐍𝐄𝐑💥",
                     Config.OWNER_ID,
                     "user_id",
                 ),
             ],
             [
                 (
-                    "Join for GFx work",
-                    "https://t.me/psy_Logos",
+                    "𝐌𝐔𝐒𝐈𝐂𝐁𝐎𝐓",
+                    "https://t.me/ll_RADHA_MUSICBOT",
                     "url",
                 ),
                 (
-                    "Powered by",
+                    "𝐏𝐎𝐖𝐄𝐑𝐃 𝐁𝐘",
                     f"https://{Config.SUPPORT_CHANNEL}.t.me",
                     "url",
                 ),
