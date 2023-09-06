@@ -105,11 +105,19 @@ async def start(c: Gojo, m: Message):
                     return
         try:
             cpt = f"""
-Hey [{m.from_user.first_name}](http://t.me/{m.from_user.username})! I am Gojo ✨.
-I'm here to help you manage your groups!
-Hit /help to find out more about how to use me in my full potential!
+🍷𝐖єℓ¢σмє 𝐓σ [{m.from_user.first_name}](http://t.me/{m.from_user.username}) 💥𝐈 αм ✭𝐀∂ναи¢є ✭𝐌єииαgє✭ 𝐘συя ✭𝐒υρєя ✭𝐆яσυρ✭
 
-Join my [News Channel](https://t.me/TKS_JOIN) to get information on all the latest updates."""
+𝐀∂∂✰ 𝐘συя 𝐆яσυρ✰ 𝐄иנσу💥
+┏━━━━━━━━━━━━━━━━━┓
+
+┣★ 𝐂яєαтσя : [𝐂ℓι¢к нєяє](https://t.me/ll_SARKAR_BABY_ll)
+
+┣★ 𝐔ρ∂αтєѕ : [𝐂ℓι¢к нєяє](https://t.me/TKS_JOIN)
+
+┣★ 𝐒υρρσят : [𝐂ℓι¢к нєяє](https://t.me/+I67bz3RT2cA3ODU1)
+
+┗━━━━━━━━━━━━━━━━━┛
+/help 𝐂ℓι¢к 𝐇σω 𝐓σ 𝐔ѕє 𝐌є 𝐘συя 𝐆яρυρ."""
 
             await m.reply_photo(
                 photo=str(choice(StartPic)),
@@ -144,11 +152,14 @@ Join my [News Channel](https://t.me/TKS_JOIN) to get information on all the late
 async def start_back(_, q: CallbackQuery):
     try:
         cpt = f"""
-Hey [{q.from_user.first_name}](http://t.me/{q.from_user.username})! I am Gojo ✨.
-I'm here to help you manage your groups!
-Hit /help to find out more about how to use me in my full potential!
+🍷𝐇єу [{m.from_user.first_name}](http://t.me/{m.from_user.username}) 
 
-Join my [News Channel](http://t.me/TKS_JOIN) to get information on all the latest updates."""
+💥𝐈 αм ✭𝐀∂ναи¢є ✭𝐌єииαgє✭ 𝐘συя ✭𝐒υρєя ✭𝐆яσυρ✭
+
+𝐈 𝐚𝐦 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮 𝐦𝐚𝐧𝐚𝐠𝐞 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩
+𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞:
++  /start 𝐒𝐭𝐚𝐫𝐭 𝐓𝐡𝐞 𝐁𝐨𝐭
++  /help 𝐆𝐢𝐯𝐞 𝐘𝐨𝐮 𝐓𝐡𝐢𝐬 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 ."""
 
         await q.edit_message_caption(
             caption=cpt,
@@ -166,13 +177,14 @@ async def commands_menu(_, q: CallbackQuery):
     keyboard = ikb(ou, True)
     try:
         cpt = f"""
-Hey **[{q.from_user.first_name}](http://t.me/{q.from_user.username})**! I am Gojo✨.
-I'm here to help you manage your groups!
-Commands available:
-× /start: Start the bot
-× /help: Give's you this message.
+🍷𝐇єу [{m.from_user.first_name}](http://t.me/{m.from_user.username}) 
 
-You can use `$` and `!` in placec of `/` as your prefix handler
+💥𝐈 αм ✭𝐀∂ναи¢є ✭𝐌єииαgє✭ 𝐘συя ✭𝐒υρєя ✭𝐆яσυρ✭
+
+𝐈 𝐚𝐦 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮 𝐦𝐚𝐧𝐚𝐠𝐞 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩
+𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞:
++  /start 𝐒𝐭𝐚𝐫𝐭 𝐓𝐡𝐞 𝐁𝐨𝐭
++  /help 𝐆𝐢𝐯𝐞 𝐘𝐨𝐮 𝐓𝐡𝐢𝐬 𝐌𝐞𝐬𝐬𝐚𝐠𝐞
 """
 
         await q.edit_message_caption(
