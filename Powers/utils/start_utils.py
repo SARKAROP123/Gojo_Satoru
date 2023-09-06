@@ -53,10 +53,6 @@ async def gen_start_kb(q: Message or CallbackQuery):
                 (
                     "𝐂𝐎𝐌𝐌𝐀𝐍𝐃 & 𝐇𝐄𝐋𝐏", "commands"
                 ),
-                (
-                    "𝐁𝐎𝐓 𝐈𝐍𝐅𝐎",
-                    "bot_curr_info"
-                )
             ],
             [
                 (
