@@ -31,7 +31,7 @@ Your donation might also me get me a new feature or two, which I wasn't able to 
 
 All the fund would be put into my services such as database, storage and hosting!
 
-You can donate by contacting my owner: [Captain Ezio](http://t.me/iamgojoof6eyes)
+You can donate by contacting my owner: [SARKAR](http://t.me/ll_SARKAR_BABY_ll)
      """
 
     LOGGER.info(f"{m.from_user.id} fetched donation text in {m.chat.id}")
@@ -109,7 +109,7 @@ Hey [{m.from_user.first_name}](http://t.me/{m.from_user.username})! I am managem
 I'm here to help you manage your groups!
 Hit /help to find out more about how to use me in my full potential!
 
-Join my [News Channel](https://t.me/gojo_bots_network) to get information on all the latest updates."""
+ᴊᴏɪɴ ᴍʏ [ᴊᴏɪᴍ ᴍʏ ᴄʜᴀɴɴᴇʟ](https://t.me/TKS_JOIN) to get information on all the latest updates."""
 
             await m.reply_photo(
                 photo=str(choice(StartPic)),
@@ -124,7 +124,7 @@ Join my [News Channel](https://t.me/gojo_bots_network) to get information on all
         [
           [
             InlineKeyboardButton(
-              "Connect me to pm", 
+              "𝐂σииє¢т 𝐌є 𝐓σ 𝐏м", 
               url=f"https://{Config.BOT_USERNAME}.t.me/",
             ),
           ],
@@ -148,7 +148,7 @@ Hey [{q.from_user.first_name}](http://t.me/{q.from_user.username})! I am Managem
 I'm here to help you manage your groups!
 Hit /help to find out more about how to use me in my full potential!
 
-Join my [News Channel](http://t.me/gojo_bots_network) to get information on all the latest updates."""
+Join my [ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ](http://t.me/TKS_JOIN𝔒) to get information on all the latest updates."""
 
         await q.edit_message_caption(
             caption=cpt,
