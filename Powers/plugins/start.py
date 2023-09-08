@@ -61,7 +61,7 @@ async def close_admin_callback(_, q: CallbackQuery):
 
 
 @Gojo.on_message(
-    command("start") & (filters.group | filters.private),
+    command("mstart") & (filters.group | filters.private),
 )
 async def start(c: Gojo, m: Message):
 
