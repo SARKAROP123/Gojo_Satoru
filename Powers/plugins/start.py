@@ -114,8 +114,8 @@ async def start(c: Gojo, m: Message):
 
 ┣★ 𝐌у 𝐆яσυρ : [𝐂ℓι¢к нєяє](https://t.me/+I67bz3RT2cA3ODU1)
 
-┗━━━━━━━━━━━━━━━━━┛
-"""
+┗━━━━━━━━━━━━━━━━━┛"""
+          
               await m.reply_photo(
                 photo=str(choice(StartPic)),
                 caption=cpt,
