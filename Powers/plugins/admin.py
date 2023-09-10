@@ -560,7 +560,7 @@ __alt_name__ = [
     "zombies",
 ]
 __HELP__ = """
-**Admin**
+**⚡𝐀∂мιи⚡**
 
 **User Commands:**
 • /adminlist: List all the admins in the Group.
