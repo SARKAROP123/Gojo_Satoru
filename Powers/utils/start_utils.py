@@ -43,40 +43,6 @@ async def gen_start_kb(q: Message or CallbackQuery):
                     f"https://t.me/{Config.BOT_USERNAME}?startgroup=new",
                     "url",
                 ),
-                (
-                    "𝐒𝐔𝐏𝐏𝐎𝐑𝐓",
-                    f"https://t.me/{SUPPORT_GROUP}",
-                    "url",
-                ),
-            ],
-            [
-                (
-                    "𝐂𝐎𝐌𝐌𝐀𝐍𝐃 & 𝐇𝐄𝐋𝐏", "commands"
-                ),
-            ],
-            [
-                (
-                    "𝐔𝐏𝐃𝐀𝐓𝐄",
-                    "https://t.me/TKS_JOIN",
-                    "url",
-                ),
-                (
-                    "💥𝐎𝐖𝐍𝐄𝐑💥",
-                    Config.OWNER_ID,
-                    "user_id",
-                ),
-            ],
-            [
-                (
-                    "𝐌𝐔𝐒𝐈𝐂𝐁𝐎𝐓",
-                    "https://t.me/ll_RADHA_MUSICBOT",
-                    "url",
-                ),
-                (
-                    "𝐏𝐎𝐖𝐄𝐑𝐃 𝐁𝐘",
-                    f"https://{Config.SUPPORT_CHANNEL}.t.me",
-                    "url",
-                ),
             ],
         ],
     )
