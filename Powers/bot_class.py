@@ -43,10 +43,20 @@ class Gojo(Client):
         await super().start()
         await self.set_bot_commands(
             [
-                BotCommand("start", "To check weather the bot is alive or not"),
-                BotCommand("help", "To get help menu"),
-                BotCommand("donate", "To buy me a coffee"),
-                BotCommand("bug","To report bugs")
+                BotCommand("start", "⚡𝐒тαят 𝐓нє 𝐁σт⚡"),
+                BotCommand("help", "⚡𝐓σ 𝐇єℓρ 𝐌єиυ⚡"),
+                BotCommand("ping", "⚡𝐏ιиg 𝐏σиg⚡"),
+                BotCommand("settings","⚡𝐒єттιиg 𝐓нιѕ 𝐁σт⚡")
+                BotCommand("owner","⚡𝐎ωиєя 𝐓нιѕ 𝐁σт⚡")
+                BotCommand("group","⚡𝐎ffι¢αℓ 𝐆яσυρ⚡")
+                BotCommand("shayri","⚡𝐒нαуяι 𝐀ℓℓ⚡")
+                BotCommand("love","⚡𝐋σνє 𝐒нαуяι 𝐀ℓℓ⚡")
+                BotCommand("utag","⚡𝐇ιи∂ι 𝐓αg 𝐌ємвєя⚡")
+                BotCommand("etag","⚡𝐄иgℓιѕн 𝐓αg 𝐌ємвєя⚡")
+                BotCommand("vc","⚡𝐕¢ 𝐓αg 𝐌ємвєя⚡")
+                BotCommand("play","⚡𝐏ℓαу 𝐒σиg 𝐍αмє⚡")
+                BotCommand("vplay","⚡𝐕ι∂єσ 𝐏ℓαу⚡")
+                BotCommand("end","⚡𝐄и∂ 𝐒σиg⚡")
             ]
         )
         meh = await self.get_me()  # Get bot info from pyrogram client
