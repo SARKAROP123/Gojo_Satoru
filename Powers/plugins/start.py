@@ -61,7 +61,7 @@ async def close_admin_callback(_, q: CallbackQuery):
 
 
 @Gojo.on_message(
-    command("mstart") & (filters.group | filters.private),
+    command("start") & (filters.group | filters.private),
 )
 async def start(c: Gojo, m: Message):
 
@@ -105,13 +105,18 @@ async def start(c: Gojo, m: Message):
                     return
         try:
             cpt = f"""
-Hey [{m.from_user.first_name}](http://t.me/{m.from_user.username})! I am management bot ✨.
-I'm here to help you manage your groups!
-Hit /help to find out more about how to use me in my full potential!
+🇮🇳𝐀𝐋𝐋 𝐔𝐏𝐃𝐀𝐓𝐄 𝐁𝐎𝐓 𝐉𝐎𝐈𝐍 𝐀𝐋𝐋🇮🇳
+┏━━━━━━━━━━━━━━━━━┓
 
-ᴊᴏɪɴ ᴍʏ [ᴊᴏɪᴍ ᴍʏ ᴄʜᴀɴɴᴇʟ](https://t.me/TKS_JOIN) to get information on all the latest updates."""
+┣★𝐎ωиєя : [𝐂ℓι¢к нєяє](https://t.me/ll_SARKAR_BABE_ll)
 
-            await m.reply_photo(
+┣★𝐁σт 𝐔ρ∂αтєѕ : [𝐂ℓι¢к нєяє](https://t.me/TKS_JOIN)
+
+┣★ 𝐌у 𝐆яσυρ : [𝐂ℓι¢к нєяє](https://t.me/+I67bz3RT2cA3ODU1)
+
+┗━━━━━━━━━━━━━━━━━┛
+"""
+           await m.reply_photo(
                 photo=str(choice(StartPic)),
                 caption=cpt,
                 reply_markup=(await gen_start_kb(m)),
