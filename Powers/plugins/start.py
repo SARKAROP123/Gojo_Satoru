@@ -104,11 +104,8 @@ async def start(c: Gojo, m: Message):
                     )
                     return
         try:
-          PM_START_TEX = """
-🍷𝐖𝐞𝐥𝐜𝐨𝐦𝐞 `{}`, 🍷 
-"""
             cpt = f"""
-🇮🇳𝐀𝐋𝐋 𝐔𝐏𝐃𝐀𝐓𝐄 𝐁𝐎𝐓 𝐉𝐎𝐈𝐍 𝐀𝐋𝐋🇮🇳
+🇮🇳 𝐘𝐄 𝐋𝐈𝐍𝐊 𝐇𝐀𝐈 𝐀𝐀𝐉𝐀𝐎 𝐘𝐇𝐀 🇮🇳
 ┏━━━━━━━━━━━━━━━━━┓
 
 ┣★𝐎ωиєя : [𝐂ℓι¢к нєяє](https://t.me/ll_SARKAR_BABE_ll)
