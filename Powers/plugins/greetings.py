@@ -207,7 +207,7 @@ async def resetgb(_, m: Message):
     db = Greetings(m.chat.id)
     if m and not m.from_user:
         return
-    text = "𝐒𝐚𝐝 𝐁𝐚𝐛𝐲 𝐓𝐡𝐢𝐬 𝐏𝐞𝐫𝐬𝐨𝐧 𝐋𝐞𝐚𝐯𝐞 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 {first}.\n𝐓𝐚𝐤𝐞 𝐂𝐚𝐫𝐞 𝐁𝐚𝐛𝐲"
+    text = "Sad to see you leaving {first}.\nTake Care!"
     db.set_goodbye_text(text,None)
     await m.reply_text("Ok Done!")
     return
@@ -218,7 +218,7 @@ async def resetwlcm(_, m: Message):
     db = Greetings(m.chat.id)
     if m and not m.from_user:
         return
-    text = "𝐇𝐞𝐲 𝐁𝐚𝐛𝐲 {first}, 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 {username} 𝐓𝐨 {chatname}!"
+    text = "Hey {first}, welcome to {chatname}!"
     db.set_welcome_text(text,None)
     await m.reply_text("Done!")
     return
