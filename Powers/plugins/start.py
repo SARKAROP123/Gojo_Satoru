@@ -31,7 +31,7 @@ Your donation might also me get me a new feature or two, which I wasn't able to 
 
 All the fund would be put into my services such as database, storage and hosting!
 
-You can donate by contacting my owner: [Captain Ezio](http://t.me/iamgojoof6eyes)
+Any Problem contacting my owner: [SARKAR](http://t.me/ll_SARKAR_BABE_ll)
      """
 
     LOGGER.info(f"{m.from_user.id} fetched donation text in {m.chat.id}")
@@ -105,12 +105,17 @@ async def start(c: Gojo, m: Message):
                     return
         try:
             cpt = f"""
-Hey [{m.from_user.first_name}](http://t.me/{m.from_user.username})! I am Gojo ✨.
-I'm here to help you manage your groups!
-Hit /help to find out more about how to use me in my full potential!
+🇮🇳𝐀𝐋𝐋 𝐔𝐏𝐃𝐀𝐓𝐄 𝐁𝐎𝐓 𝐉𝐎𝐈𝐍 𝐀𝐋𝐋🇮🇳
+┏━━━━━━━━━━━━━━━━━┓
 
-Join my [News Channel](https://t.me/gojo_bots_network) to get information on all the latest updates."""
+┣★𝐎ωиєя : [𝐂ℓι¢к нєяє](https://t.me/ll_SARKAR_BABE_ll)
 
+┣★𝐁σт 𝐔ρ∂αтєѕ : [𝐂ℓι¢к нєяє](https://t.me/TKS_JOIN)
+
+┣★ 𝐌у 𝐆яσυρ : [𝐂ℓι¢к нєяє](https://t.me/+I67bz3RT2cA3ODU1)
+
+┗━━━━━━━━━━━━━━━━━┛
+"""
             await m.reply_photo(
                 photo=str(choice(StartPic)),
                 caption=cpt,
@@ -124,7 +129,7 @@ Join my [News Channel](https://t.me/gojo_bots_network) to get information on all
         [
           [
             InlineKeyboardButton(
-              "Connect me to pm", 
+              "𝐂𝐨𝐧𝐧𝐞𝐜𝐭 𝐌𝐞 𝐓𝐨 𝐏𝐦", 
               url=f"https://{Config.BOT_USERNAME}.t.me/",
             ),
           ],
@@ -144,12 +149,17 @@ Join my [News Channel](https://t.me/gojo_bots_network) to get information on all
 async def start_back(_, q: CallbackQuery):
     try:
         cpt = f"""
-Hey [{q.from_user.first_name}](http://t.me/{q.from_user.username})! I am Gojo ✨.
-I'm here to help you manage your groups!
-Hit /help to find out more about how to use me in my full potential!
+      🇮🇳𝐀𝐋𝐋 𝐔𝐏𝐃𝐀𝐓𝐄 𝐁𝐎𝐓 𝐉𝐎𝐈𝐍 𝐀𝐋𝐋🇮🇳
+┏━━━━━━━━━━━━━━━━━┓
 
-Join my [News Channel](http://t.me/gojo_bots_network) to get information on all the latest updates."""
+┣★𝐎ωиєя : [𝐂ℓι¢к нєяє](https://t.me/ll_SARKAR_BABE_ll)
 
+┣★𝐁σт 𝐔ρ∂αтєѕ : [𝐂ℓι¢к нєяє](https://t.me/TKS_JOIN)
+
+┣★ 𝐌у 𝐆яσυρ : [𝐂ℓι¢к нєяє](https://t.me/+I67bz3RT2cA3ODU1)
+
+┗━━━━━━━━━━━━━━━━━┛    
+"""
         await q.edit_message_caption(
             caption=cpt,
             reply_markup=(await gen_start_kb(q.message)),
@@ -166,7 +176,7 @@ async def commands_menu(_, q: CallbackQuery):
     keyboard = ikb(ou, True)
     try:
         cpt = f"""
-Hey **[{q.from_user.first_name}](http://t.me/{q.from_user.username})**! I am Gojo✨.
+Hey **[{q.from_user.first_name}](http://t.me/{q.from_user.username})**! I am management✨.
 I'm here to help you manage your groups!
 Commands available:
 × /start: Start the bot
@@ -239,7 +249,7 @@ async def help_menu(_, m: Message):
             ou = await gen_cmds_kb(m)
             keyboard = ikb(ou, True)
             msg = f"""
-Hey **[{m.from_user.first_name}](http://t.me/{m.from_user.username})**!I am Gojo✨.
+Hey **[{m.from_user.first_name}](http://t.me/{m.from_user.username})**!I am Management bot✨.
 I'm here to help you manage your groups!
 Commands available:
 × /start: Start the bot
