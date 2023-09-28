@@ -207,7 +207,7 @@ async def resetgb(_, m: Message):
     db = Greetings(m.chat.id)
     if m and not m.from_user:
         return
-    text = "Sad to see you leaving {first}.\nTake Care!"
+    text = " {first}.\nये मर गया #𝐒𝐀𝐃 𝐁𝐀𝐁𝐘!"
     db.set_goodbye_text(text,None)
     await m.reply_text("Ok Done!")
     return
