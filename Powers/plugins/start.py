@@ -116,6 +116,7 @@ async def start(c: Gojo, m: Message):
 
 ┗━━━━━━━━━━━━━━━━━┛
   """
+          
          await m.reply_photo(
                 photo=str(choice(StartPic)),
                 caption=cpt,
