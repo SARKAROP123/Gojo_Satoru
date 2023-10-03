@@ -105,7 +105,7 @@ async def start(c: Gojo, m: Message):
                     return
         try:
             cpt = f"""
-                  🇮🇳𝐀𝐋𝐋 𝐔𝐏𝐃𝐀𝐓𝐄 𝐁𝐎𝐓 𝐉𝐎𝐈𝐍 𝐀𝐋𝐋🇮🇳
+🇮🇳𝐀𝐋𝐋 𝐔𝐏𝐃𝐀𝐓𝐄 𝐁𝐎𝐓 𝐉𝐎𝐈𝐍 𝐀𝐋𝐋🇮🇳
 ┏━━━━━━━━━━━━━━━━━┓
 
 ┣★𝐎ωиєя : [𝐂ℓι¢к нєяє](https://t.me/ll_SARKAR_BABE_ll)
@@ -117,7 +117,7 @@ async def start(c: Gojo, m: Message):
 ┗━━━━━━━━━━━━━━━━━┛
   """
           
-         await m.reply_photo(
+            await m.reply_photo(
                 photo=str(choice(StartPic)),
                 caption=cpt,
                 reply_markup=(await gen_start_kb(m)),
