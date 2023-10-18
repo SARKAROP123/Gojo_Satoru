@@ -135,24 +135,24 @@ async def user_info(c: Gojo, user, already=False):
     caption = f"""
 <b><i><u>⚡️ Extracted User info From Telegram ⚡️</b></i></u>
 
-<b>🆔 User ID</b>: <code>{user_id}</code>
-<b>📎 Link To Profile</b>: <a href='tg://user?id={user_id}'>Click Here🚪</a>
-<b>🫵 Mention</b>: {mention}
-<b>🗣 First Name</b>: <code>{first_name}</code>
-<b>🔅 Second Name</b>: <code>{last_name}</code>
-<b>🔍 Username</b>: {("@" + username) if username else "NA"}
-<b>✍️ Bio</b>: `{about}`
-<b>🧑‍💻 Support</b>: {is_support}
-<b>🥷 Support user type</b>: <code>{omp}</code>
-<b>💣 Gbanned</b>: {gban}
-<b>☠️ Gban reason</b>: <code>{reason}</code>
-<b>🌐 DC ID</b>: {dc_id}
-<b>✋ RESTRICTED</b>: {is_restricted}
-<b>✅ VERIFIED</b>: {is_verified}
-<b>❌ FAKE</b> : {is_fake}
-<b>⚠️ SCAM</b> : {is_scam} 
-<b>🤖 BOT</b>: {is_bot}
-<b>👀 Last seen</b>: <code>{last_date}</code>
+<b>🆔 𝐔𝐒𝐄𝐑 𝐈𝐃</b>: <code>{user_id}</code>
+<b>📎 𝐋𝐈𝐍𝐊 𝐓𝐎 𝐏𝐑𝐎𝐅𝐈𝐋𝐄</b>: <a href='tg://user?id={user_id}'>Click Here🚪</a>
+<b>🫵 𝐌𝐄𝐍𝐓𝐈𝐎𝐍</b>: {mention}
+<b>🗣 𝐅𝐈𝐑𝐒𝐓 𝐍𝐀𝐌𝐄</b>: <code>{first_name}</code>
+<b>🔅𝐒𝐄𝐂𝐎𝐍𝐃 𝐍𝐀𝐌𝐄</b>: <code>{last_name}</code>
+<b>🔍 𝐔𝐒𝐄𝐑𝐍𝐀𝐌𝐄</b>: {("@" + username) if username else "NA"}
+<b>✍️ 𝐁𝐈𝐎</b>: `{about}`
+<b>🧑‍💻 𝐒𝐔𝐏𝐏𝐎𝐑𝐓</b>: {is_support}
+<b>🥷 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐔𝐒𝐄𝐑 𝐓𝐘𝐏𝐄</b>: <code>{omp}</code>
+<b>💣 𝐆𝐁𝐀𝐍𝐄𝐃</b>: {gban}
+<b>☠️ 𝐆𝐁𝐀𝐍 𝐑𝐄𝐀𝐒𝐎𝐍</b>: <code>{reason}</code>
+<b>🌐 𝐃𝐂 𝐈𝐃</b>: {dc_id}
+<b>✋ 𝐑𝐄𝐒𝐓𝐑𝐈𝐂𝐓𝐄𝐃</b>: {is_restricted}
+<b>✅ 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃</b>: {is_verified}
+<b>❌ 𝐅𝐀𝐊𝐄</b> : {is_fake}
+<b>⚠️ 𝐒𝐂𝐀𝐌</b> : {is_scam} 
+<b>🤖 𝐁𝐎𝐓</b>: {is_bot}
+<b>👀 𝐋𝐀𝐒𝐓 𝐒𝐄𝐄𝐍</b>: <code>{last_date}</code>
 
 """
 
