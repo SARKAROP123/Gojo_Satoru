@@ -10,14 +10,17 @@ from pyrogram.types import (CallbackQuery, ChatPermissions,
                             InlineKeyboardButton, InlineKeyboardMarkup,
                             Message)
 
-from Powers import LOGGER, SUPPORT_GROUP, SUPPORT_STAFF
+from Powers import LOGGER, SUPPORT_GROUP
 from Powers.bot_class import Gojo
 from Powers.database.approve_db import Approve
 from Powers.database.flood_db import Floods
+from Powers.supports import get_support_staff
 from Powers.utils.custom_filters import admin_filter, command
 from Powers.utils.extras import BAN_GIFS, KICK_GIFS, MUTE_GIFS
 from Powers.utils.kbhelpers import ikb
 from Powers.vars import Config
+
+SUPPORT_STAFF = get_support_staff()
 
 on_key = ["on", "start", "disable"]
 off_key = ["off", "end", "enable", "stop"]
@@ -292,7 +295,7 @@ async def reverse_callbacks(c: Gojo, q: CallbackQuery):
         return q.answer("Looks like you are not an user 👀")
     if action == "ban":
         user = await q.message.chat.get_member(q.from_user.id)
-        if not user.privileges.can_restrict_members and q.from_user.id in SUPPORT_STAFF:
+        if user.privileges and not user.privileges.can_restrict_members and q.from_user.id not in SUPPORT_STAFF:
             await q.answer(
                 "You don't have enough permission to do this!\nStay in your limits!",
                 show_alert=True,
@@ -408,7 +411,7 @@ async def flood_watcher(c: Gojo, m: Message):
                             ],
                         ],
                     )
-                    txt = "Don't dare to spam here if I am around!"
+                    txt = "Don't dare to spam here if I am around! Nothing can escape my 6 eyes\nAction: Baned\nReason: Spaming"
                     await m.reply_animation(
                         animation=str(choice(BAN_GIFS)),
                         caption=txt,
@@ -440,7 +443,7 @@ async def flood_watcher(c: Gojo, m: Message):
             elif action == "kick":
                 try:
                     await m.chat.ban_member(u_id)
-                    txt = "Don't dare to spam here if I am around!"
+                    txt = "Don't dare to spam here if I am around! Nothing can escape my 6 eyes\nAction: kicked\nReason: Spaming"
                     await m.reply_animation(
                         animation=str(choice(KICK_GIFS)),
                         caption=txt,
@@ -483,7 +486,7 @@ async def flood_watcher(c: Gojo, m: Message):
                             ],
                         ],
                     )
-                    txt = "Don't dare to spam here if I am around!"
+                    txt = "Don't dare to spam here if I am around! Nothing can escape my 6 eyes\nAction: Muted\nReason: Spaming"
                     await m.reply_animation(
                         animation=str(choice(MUTE_GIFS)),
                         caption=txt,
@@ -540,4 +543,3 @@ __HELP__ = """
 **Example:**
 `/setflood on`
 """
-
