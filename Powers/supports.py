@@ -1,6 +1,4 @@
 from Powers import DEV_USERS, OWNER_ID, SUDO_USERS, WHITELIST_USERS
-from Powers.database.support_db import SUPPORTS
-
 
 async def load_support_users():
     support = SUPPORTS()
