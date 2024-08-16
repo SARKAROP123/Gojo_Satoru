@@ -16,27 +16,9 @@ class Config:
     API_HASH = config("API_HASH", default=None)
     OWNER_ID = int(config("OWNER_ID", default=6680378171))
     MESSAGE_DUMP = int(config("MESSAGE_DUMP", default=-100))
-    DEV_USERS = [
-        int(i)
-        for i in config(
-            "DEV_USERS",
-            default="",
-        ).split(" ")
-    ]
-    SUDO_USERS = [
-        int(i)
-        for i in config(
-            "SUDO_USERS",
-            default="",
-        ).split(" ")
-    ]
-    WHITELIST_USERS = [
-        int(i)
-        for i in config(
-            "WHITELIST_USERS",
-            default="",
-        ).split(" ")
-    ]
+    DEV_USERS = [int(i) for i in config("DEV_USERS", default="").split() if i.strip()]
+    SUDO_USERS = [int(i) for i in config("SUDO_USERS", default="").split() if i.strip()]
+    WHITELIST_USERS = [int(i) for i in config("WHITELIST_USERS", default="").split() if i.strip()]
     GENIUS_API_TOKEN = config("GENIUS_API",default=None)
     AuDD_API = config("AuDD_API",default=None)
     RMBG_API = config("RMBG_API",default=None)
@@ -65,9 +47,9 @@ class Development:
     API_HASH = "YOUR API HASH"  # Your APP_HASH from Telegram
     OWNER_ID = 6680378171  # Your telegram user id defult to mine
     MESSAGE_DUMP = -100  # Your Private Group ID for logs
-    DEV_USERS = []
-    SUDO_USERS = []
-    WHITELIST_USERS = []
+    DEV_USERS = [int(i) for i in " ".split() if i.strip()]
+    SUDO_USERS = [int(i) for i in " ".split() if i.strip()]
+    WHITELIST_USERS = [int(i) for i in " ".split() if i.strip()]
     DB_URI = ""  # Your mongo DB URI
     DB_NAME = ""  # Your DB name
     NO_LOAD = []
@@ -80,3 +62,4 @@ class Development:
     TIME_ZONE = 'Asia/Kolkata'
     BDB_URI = ""
     WORKERS = 8
+isko use kro vars.py mein pura
