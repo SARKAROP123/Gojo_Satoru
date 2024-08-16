@@ -20,7 +20,6 @@ from Powers import (BOT_TOKEN, LOG_DATETIME, LOGFILE, LOGGER, MESSAGE_DUMP,
 from Powers.bot_class import Gojo
 from Powers.database import MongoDB
 from Powers.database.chats_db import Chats
-from Powers.database.support_db import SUPPORTS
 from Powers.database.users_db import Users
 from Powers.plugins.scheduled_jobs import clean_my_db
 from Powers.supports import get_support_staff
