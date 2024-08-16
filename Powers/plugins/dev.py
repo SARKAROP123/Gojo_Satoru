@@ -21,7 +21,6 @@ from Powers.bot_class import Gojo
 from Powers.database import MongoDB
 from Powers.database.chats_db import Chats
 from Powers.database.users_db import Users
-from Powers.plugins.scheduled_jobs import clean_my_db
 from Powers.supports import get_support_staff
 from Powers.utils.clean_file import remove_markdown_and_html
 from Powers.utils.custom_filters import command
