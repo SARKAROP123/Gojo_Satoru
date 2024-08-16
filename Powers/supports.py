@@ -14,8 +14,7 @@ def get_support_staff(want = "all"):
     """
     dev, sudo, whitelist, dev_level, sudo_level, all
     """
-    support = SUPPORTS()
-    devs = support.get_particular_support("dev")
+        devs = support.get_particular_support("dev")
     sudo = support.get_particular_support("sudo")
     whitelist = support.get_particular_support("whitelist")
 
