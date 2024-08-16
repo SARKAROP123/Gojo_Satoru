@@ -62,4 +62,3 @@ class Development:
     TIME_ZONE = 'Asia/Kolkata'
     BDB_URI = ""
     WORKERS = 8
-isko use kro vars.py mein pura
